@@ -1,0 +1,2 @@
+module AccountannotationsHelper
+end
