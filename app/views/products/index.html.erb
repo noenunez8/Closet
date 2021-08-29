@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<br>
 <h1>Products</h1>
 
 <table>
@@ -16,7 +16,7 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.detail %></td>
-        <td><%= product.account_id %></td>
+        <td><%= product.account.name%></td>
         <td><%= product.price %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>

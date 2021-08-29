@@ -1,2 +1,4 @@
 class Account < ApplicationRecord
+
+
 end
