@@ -5,6 +5,7 @@ class AccountsController < ApplicationController
   # GET /accounts or /accounts.json
   def index
     @accounts = Account.all
+    @accounts = @accounts.page(params[:page] || 1)
   end
 
   # GET /accounts/1 or /accounts/1.json
